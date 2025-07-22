@@ -118,8 +118,8 @@ export const App = () => {
           This is a number 0-1 that represents how much of the energy consumed
           by the human body is output to the pedals.
           <br />
-          The usual range is 0.2 - 0.25 for cycling; According to my workout
-          data for me the value is 0.238.
+          The usual range is 0.2 - 0.25 for cycling; My turbo trainer seems to
+          use 0.238
         </div>
       </div>
 
