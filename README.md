@@ -3,9 +3,7 @@
 This is an application I use to calculate the missing value from
 
 ```
-time * power
------------- = efficiency
-4200 * kcal
+time (s) * power (W)
+-------------------- = efficiency
+4184 * energy (kCal)
 ```
-
-where efficiency is my personal value of 0.238 for cycling.

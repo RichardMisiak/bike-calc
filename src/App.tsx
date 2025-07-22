@@ -17,7 +17,7 @@ export const App = () => {
     const p = parseFloat(power);
     const k = parseFloat(kcal);
 
-    const f = parseFloat(factor) * 4200;
+    const f = parseFloat(factor) * 4184;
 
     const timeEntered = minutes !== "" || seconds !== "";
     const powerEntered = power !== "";
@@ -127,9 +127,12 @@ export const App = () => {
 
       <h3>Info</h3>
       <p style={{ fontSize: "small" }}>
-        Total calories burned, power and time are related by
+        Total calories burned (kCal), power (W) and time (s) are related by
       </p>
-      <pre>time * power / 4200 = efficiency * calories</pre>
+      <pre>time * power / 4184 = efficiency * calories</pre>
+      <p style={{ fontSize: "small" }}>
+        where 4184 is the conversion between kCal and joules.
+      </p>
     </div>
   );
 };
