@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const FACTOR = 0.238;
+
 export const App = () => {
   const [minutes, setMinutes] = useState("");
   const [seconds, setSeconds] = useState("");
@@ -114,13 +115,21 @@ export const App = () => {
           onChange={(e) => setFactor(e.target.value)}
         />
         <div style={{ fontSize: "small", marginTop: "4px" }}>
-          This is the number 0-1 representing the efficiency of the human body.
-          <br />1 would be 100% of energy burned in total is sent to the pedals.
+          This is a number 0-1 that represents how much of the energy consumed
+          by the human body is output to the pedals.
           <br />
-          The usual range is 0.2 - 0.25, from my own workout data 0.238 is my
-          value.
+          The usual range is 0.2 - 0.25 for cycling; According to my workout
+          data for me the value is 0.238.
         </div>
       </div>
+
+      <hr></hr>
+
+      <h3>Info</h3>
+      <p style={{ fontSize: "small" }}>
+        Total calories burned, power and time are related by
+      </p>
+      <pre>time * power / 4200 = efficiency * calories</pre>
     </div>
   );
 };
